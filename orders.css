@@ -110,6 +110,28 @@ body {
     background: #f44336;
 }
 
+/* Sidebar Footer (Add this section) */
+.sidebar-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto; /* Pushes the footer to the bottom of the sidebar */
+    padding: 10px 0;
+    background: #f8f9fa;
+    border-top: 1px solid #e1e1e1;
+}
+
+.sidebar-footer a {
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar-footer a:hover {
+    color: #ffcb05;
+}
+
+
 @media (max-width: 768px) {
     .sidebar {
         display: none;
