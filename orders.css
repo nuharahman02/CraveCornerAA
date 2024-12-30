@@ -7,7 +7,7 @@ body {
 .container {
     display: flex;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .sidebar {
@@ -111,6 +111,13 @@ body {
 }
 
 /* Sidebar Footer (Add this section) */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure sidebar takes full height */
+}
+
 .sidebar-footer {
     display: flex;
     justify-content: space-around;
@@ -122,7 +129,7 @@ body {
 
 .sidebar-footer a {
     color: #333;
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
