@@ -1,66 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 </head>
 <body>
-  <div class="dashboard">
-    <aside class="sidebar">
-      <ul>
-        <li><span class="icon">📊</span> Dashboard</li>
-        <li><span class="icon">📋</span> Orders</li>
-        <li><span class="icon">📄</span> Orders Details</li>
-        <li><span class="icon">📦</span> Products</li>
-        <li><span class="icon">🍽️</span> Menu</li>
-        <li><span class="icon">🛒</span> Cart</li>
-      </ul>
-    </aside>
-    <main class="content">
-      <header>
-        <h1>Orders</h1>
-        <div class="search-bar">
-          <input type="text" placeholder="Search">
-        </div>
-      </header>
-      <section class="orders">
-        <h2>Recent Purchases</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Select</th>
-              <th>Order ID</th>
-              <th>Table No.</th>
-              <th>Customer Name</th>
-              <th>Status</th>
-              <th>Amount</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><input type="checkbox"></td>
-              <td>Lorem Ipsum</td>
-              <td>#25426</td>
-              <td>Kavin</td>
-              <td><span class="status served">Served</span></td>
-              <td>Tk200.00</td>
-            </tr>
-            <tr>
-              <td><input type="checkbox"></td>
-              <td>Lorem Ipsum</td>
-              <td>#25425</td>
-              <td>Komael</td>
-              <td><span class="status canceled">Canceled</span></td>
-              <td>Tk200.00</td>
-            </tr>
-            <!-- Add more rows as needed -->
-          </tbody>
-        </table>
-      </section>
-    </main>
-  </div>
-  <script src="script.js"></script>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#" class="active">Orders</a></li>
+                    <li><a href="#">Orders Details</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <header class="header">
+                <h1>Orders</h1>
+                <input type="text" placeholder="Search" class="search-bar">
+            </header>
+
+            <section class="table-container">
+                <h2>Recent Purchases</h2>
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>Order ID</th>
+                            <th>Table No.</th>
+                            <th>Customer Name</th>
+                            <th>Status</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Lorem Ipsum</td>
+                            <td>#25426</td>
+                            <td>Kavin</td>
+                            <td class="status served">Served</td>
+                            <td>Tk200.00</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Lorem Ipsum</td>
+                            <td>#25425</td>
+                            <td>Komael</td>
+                            <td class="status canceled">Canceled</td>
+                            <td>Tk200.00</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Lorem Ipsum</td>
+                            <td>#25424</td>
+                            <td>Nikhil</td>
+                            <td class="status served">Served</td>
+                            <td>Tk200.00</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
