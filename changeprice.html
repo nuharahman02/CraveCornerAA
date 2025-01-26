@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Price</title>
+    <link rel="stylesheet" href="changeprice.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">🏠 Dashboard</a></li>
+                    <li><a href="orders.html">📦 Orders</a></li>
+                    <!-- <li><a href="">🔍 Orders Details</a></li> -->
+                    <li><a href="products.html">🛍️ Products</a></li>
+                    <!-- <li><a href="#">🍴 Menu</a></li> -->
+                    <li><a href="cartforadmin.html" >🛒 Cart</a></li>
+                </ul>
+                <div class="sidebar-footer">
+                    <a href="setting.html" class="footer-icon"  class="active">⚙️</a>
+                    <a href="dashboard.html" class="footer-icon">🏠</a>
+                    <a href="admin.html" class="footer-icon">👤</a>
+                </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header class="header">
+                <h1>Change Food Price</h1>
+                <input type="text" placeholder="Search" class="search-bar">
+            </header>
+
+            <!-- Food Price Section -->
+            <section class="food-price">
+                <h2>Category > Pizza</h2>
+                <div class="food-item">
+                    <img src="pepperoni-pizza.webp" alt="Pepperoni Pizza">
+                    <div class="item-details">
+                        <h3>Pepperoni Pizza</h3>
+                        <p>Tomato, olives, green pepper</p>
+                        <p>TK 40.00</p>
+                    </div>
+                    <div class="price-input">
+                        <label>Regular Price</label>
+                        <input type="text" value="TK 500">
+                        <label>New Price</label>
+                        <input type="text" placeholder="Enter new price">
+                    </div>
+                </div>
+
+                <div class="food-item">
+                    <img src="pepperoni-pizza.webp" alt="Pepperoni Pizza">
+                    <div class="item-details">
+                        <h3>Pepperoni Pizza</h3>
+                        <p>Tomato, olives, green pepper</p>
+                        <p>TK 40.00</p>
+                    </div>
+                    <div class="price-input">
+                        <label>Regular Price</label>
+                        <input type="text" value="TK 500">
+                        <label>New Price</label>
+                        <input type="text" placeholder="Enter new price">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="update-btn">Update</button>
+                    <button class="cancel-btn">Cancel</button>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

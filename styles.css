@@ -95,7 +95,10 @@ input {
   background-color: #6c757d;
   color: white;
 }
-
+.btn-login a{
+  color: white;
+  text-decoration: none;
+}
 .btn-login:hover {
   background-color: #343a40;
 }

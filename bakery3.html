@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Category</title>
+    <link rel="stylesheet" href="bakery3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="dashboard.html" >🏠 Dashboard</a></li>
+                <li><a href="orders.html">📦 Orders</a></li>
+                <!-- <li><a href="#">🔍 Order Details</a></li> -->
+                <li><a href="products.html" class="active">🛍️ Products</a></li>
+                <!-- <li><a href="#">🍴 Menu</a></li> -->
+                <li><a href="cartforadmin.html">🛒 Cart</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="setting.html" class="footer-icon">⚙️</a>
+                <a href="dashboard.html" class="footer-icon">🏠</a>
+                <a href="admin.html" class="footer-icon">👤</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="header">
+                <h1>Category ></h1>
+                <input type="text" class="search-bar" placeholder="Search">
+            </div>
+            <div class="product-section">
+                <div class="product-category">
+                    <img src="icons/burger.png" alt="Burger">
+                    <h2>Burger</h2>
+                </div>
+                <div class="choice-section">
+                    <h3>Choice of Bottom Burger</h3>
+                    <form>
+                        <ul class="burger-list">
+                            <li>
+                                <label>
+                                    <input type="radio" name="burger" value="Beef Burger">
+                                    Beef Burger
+                                </label>
+                                <div>
+                                    <label><input type="checkbox"> Active</label>
+                                    <label><input type="checkbox"> Hide</label>
+                                </div>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="burger" value="BBQ Chicken Burger">
+                                    BBQ Chicken Burger
+                                </label>
+                                <div>
+                                    <label><input type="checkbox"> Active</label>
+                                    <label><input type="checkbox"> Hide</label>
+                                </div>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="burger" value="BBQ Beef Burger">
+                                    BBQ Beef Burger
+                                </label>
+                                <div>
+                                    <label><input type="checkbox"> Active</label>
+                                    <label><input type="checkbox"> Hide</label>
+                                </div>
+                            </li>
+                        </ul>
+                        <button type="submit" class="submit-btn">Save Preferences</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

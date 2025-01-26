@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cartforadmin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                        <!-- <li>🏠 Dashboard</li>
+                        <li>📦 Orders</li>
+                        <li>🔍 Order Details</li>
+                        <li>🛍️ Products</li>
+                        <li>🍴 Menu</li>
+                        <li>🛒 Cart</li> -->
+                    <li><a href="dashboard.html">🏠 Dashboard</a></li>
+                    <li><a href="orders.html">📦 Orders</a></li>
+                    <!-- <li><a href="">🔍 Orders Details</a></li> -->
+                    <li><a href="products.html" >🛍️ Products</a></li>
+                    <!-- <li><a href="#">🍴 Menu</a></li> -->
+                    <li><a href="cartforadmin.html" class="active">🛒 Cart</a></li>
+                </ul>
+                <div class="sidebar-footer">
+                    <a href="setting.html" class="footer-icon">⚙️</a>
+                    <a href="dashboard.html" class="footer-icon">🏠</a>
+                    <a href="admin.html" class="footer-icon">👤</a>
+                </div>
+            </nav>
+        </aside>
+       
+           
+        <main class="content">
+            <header class="header">
+                <h1>Cart</h1>
+                <input type="text" placeholder="Search" class="search-bar">
+            </header>
+
+            <section class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <img src="smashed-advo.jpg" alt="Smashed Avo">
+                        <div class="item-info">
+                            <p>Smashed Avo</p>
+                            <span>TK220.00</span>
+                        </div>
+                        <div class="quantity">
+                            <button>-</button>
+                            <input type="number" value="1" min="1">
+                            <button>+</button>
+                        </div>
+                        <button class="remove-item">×</button>
+                    </div>
+
+                    <div class="cart-item">
+                        <img src="yin & yang.jpg" alt="Yin & Yang">
+                        <div class="item-info">
+                            <p>Yin & Yang</p>
+                            <span>TK210.00</span>
+                        </div>
+                        <div class="quantity">
+                            <button>-</button>
+                            <input type="number" value="1" min="1">
+                            <button>+</button>
+                        </div>
+                        <button class="remove-item">×</button>
+                    </div>
+                    <div class="cart-item">
+                        <img src="pancake.jpg" alt="Pancakes">
+                        <div class="item-info">
+                            <p>Pancakes</p>
+                            <span>TK225.00</span>
+                        </div>
+                        <div class="quantity">
+                            <button>-</button>
+                            <input type="number" value="1" min="1">
+                            <button>+</button>
+                        </div>
+                        <button class="remove-item">×</button>
+                    </div>
+                    <div class="cart-item">
+                        <img src="rancheros.jpeg" alt="Rancheros">
+                        <div class="item-info">
+                            <p>Rancheros</p>
+                            <span>TK210.00</span>
+                        </div>
+                        <div class="quantity">
+                            <button>-</button>
+                            <input type="number" value="1" min="1">
+                            <button>+</button>
+                        </div>
+                        <button class="remove-item">×</button>
+                    </div>
+                    
+                </div>
+
+                <aside class="cart-summary">
+                    <div class="subtotal">
+                        <h2>Your Subtotal</h2>
+                        <p>Subtotal: <span>TK80.00</span></p>
+                        <button class="confirm-order">Confirm Order</button>
+                    </div>
+                    <div class="promo-code">
+                        <h3>Promo Code</h3>
+                        <input type="text" placeholder="Enter promo code">
+                        <button>Apply</button> 
+                    </div>
+                </aside>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

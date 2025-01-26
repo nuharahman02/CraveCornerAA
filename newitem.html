@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Item</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="newitem.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">🏠 Dashboard</a></li>
+                    <li><a href="orders.html">📦 Orders</a></li>
+                    <!-- <li><a href="">🔍 Orders Details</a></li> -->
+                    <li><a href="products.html">🛍️ Products</a></li>
+                    <!-- <li><a href="#">🍴 Menu</a></li> -->
+                    <li><a href="cartforadmin.html" >🛒 Cart</a></li>
+                </ul>
+                <div class="sidebar-footer">
+                    <a href="setting.html" class="footer-icon"  class="active">⚙️</a>
+                    <a href="dashboard.html" class="footer-icon">🏠</a>
+                    <a href="admin.html" class="footer-icon">👤</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <header class="header">
+                <input type="text" placeholder="Search" class="search-bar">
+            </header>
+
+            <section class="add-item-form">
+                <h1>Add New Item</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="product-name">Product Name</label>
+                        <input type="text" id="product-name" placeholder="Enter product name">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" placeholder="Enter product description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <input type="text" id="category" placeholder="Enter category">
+                    </div>
+                    <div class="price-group">
+                        <div class="form-group">
+                            <label for="regular-price">Regular Price</label>
+                            <input type="text" id="regular-price" placeholder="Tk 500">
+                        </div>
+                        <div class="form-group">
+                            <label for="sale-price">Sale Price</label>
+                            <input type="text" id="sale-price" placeholder="Tk 450">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-gallery">Product Gallery</label>
+                        <div class="upload-area">
+                            <p>Drop your image here, or browse<br>JPEG, PNG are allowed</p>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn update">Update</button>
+                        <button type="button" class="btn delete">Delete</button>
+                        <button type="button" class="btn cancel">Cancel</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

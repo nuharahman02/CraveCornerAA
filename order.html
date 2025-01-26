@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" >🏠 Dashboard</a></li>
+                <li><a href="#" class="active">📦 Orders</a></li>
+                <!-- <li><a href="#">🔍 Order Details</a></li> -->
+                <li><a href="#">🛍️ Products</a></li>
+                <li><a href="#">🍴 Menu</a></li>
+                <li><a href="#">🛒 Cart</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" class="footer-icon">⚙️</a>
+                <a href="#" class="footer-icon">🏠</a>
+                <a href="#" class="footer-icon">👤</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="header">
+                <h1>Order Details</h1>
+                <input type="text" class="search-bar" placeholder="Search">
+            </div>
+
+            <!-- Order Navigation -->
+            <div class="order-nav">
+                <button class="active">#345</button>
+                <button>#346</button>
+                <button>#347</button>
+                <button>#348</button>
+                <button>#349</button>
+            </div>
+
+            <!-- Orders Grid -->
+            <div class="orders-grid">
+                <!-- Order Card 1 -->
+                <div class="order-card">
+                    <div class="order-header">
+                        <h2>Order #345</h2>
+                        <p>05 Feb 2023, 08:28 PM</p>
+                    </div>
+                    <div class="order-item">
+                        <img src="item1.png" alt="Vegetable Mixups">
+                        <div>
+                            <p><strong>Vegetable Mixups</strong></p>
+                            <p>Vegetable Fritters with Egg</p>
+                            <p>$5.30 | Qty: 1</p>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <img src="item2.png" alt="Chinese Takeout Dish">
+                        <div>
+                            <p><strong>Chinese Takeout Dish</strong></p>
+                            <p>Fresh Prawn Mix Salad</p>
+                            <p>$5.30 | Qty: 1</p>
+                        </div>
+                    </div>
+                    <div class="order-actions">
+                        <button class="reject">Reject</button>
+                        <button class="approve">Approve</button>
+                    </div>
+                </div>
+
+                <!-- Order Card 2 -->
+                <div class="order-card">
+                    <div class="order-header">
+                        <h2>Order #346</h2>
+                        <p>05 Feb 2023, 08:15 PM</p>
+                    </div>
+                    <div class="order-item">
+                        <img src="item3.png" alt="Baked Dish">
+                        <div>
+                            <p><strong>Baked Pasted Dishes</strong></p>
+                            <p>$2.48 | Qty: 1</p>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <img src="item4.png" alt="Vegetable Mixups">
+                        <div>
+                            <p><strong>Vegetable Mixups</strong></p>
+                            <p>Vegetable Fritters with Egg</p>
+                            <p>$5.30 | Qty: 1</p>
+                        </div>
+                    </div>
+                    <div class="order-actions">
+                        <button class="reject">Rejected</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

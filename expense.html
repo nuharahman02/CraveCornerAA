@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense</title>
+    <link rel="stylesheet" href="expense.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">🏠 Dashboard</a></li>
+                    <li><a href="#">📦 Orders</a></li>
+                    <li><a href="#">🔍 Orders Details</a></li>
+                    <li><a href="#">🛍️ Products</a></li>
+                    <li><a href="#">🍴 Menu</a></li>
+                    <li><a href="#" class="active">🛒 Cart</a></li>
+                </ul>
+                <div class="sidebar-footer">
+                    <a href="#">⚙️</a>
+                    <a href="#">🏠</a>
+                    <a href="#">👤</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <header class="header">
+                <input type="text" placeholder="Search" class="search-bar">
+            </header>
+
+            <section class="form-container">
+                <form class="expense-form">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option>Bill & Utility</option>
+                            <option>Travel</option>
+                            <option>Food</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description (Optional)</label>
+                        <input type="text" id="description" placeholder="Enter description">
+                    </div>
+                    <div class="form-group">
+                        <label for="total">Total</label>
+                        <input type="number" id="total" placeholder="Enter total amount">
+                    </div>
+                    <div class="form-group image-upload">
+                        <label>Expense Receipt Images</label>
+                        <div class="image-boxes">
+                            <div class="image-box">+</div>
+                            <div class="image-box">+</div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn cancel">Cancel</button>
+                        <button type="submit" class="btn save">Save</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

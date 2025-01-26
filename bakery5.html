@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Category</title>
+    <link rel="stylesheet" href="bakery5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="dashboard.html">🏠 Dashboard</a></li>
+                <li><a href="orders.html">📦 Orders</a></li>
+                <!-- <li><a href="">🔍 Orders Details</a></li> -->
+                <li><a href="products.html" class="active">🛍️ Products</a></li>
+                <!-- <li><a href="#">🍴 Menu</a></li> -->
+                <li><a href="cartforadmin.html" >🛒 Cart</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="setting.html" class="footer-icon">⚙️</a>
+                <a href="dashboard.html" class="footer-icon">🏠</a>
+                <a href="admin.html" class="footer-icon">👤</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="header">
+                <h1>Category ></h1>
+                <input type="text" class="search-bar" placeholder="Search">
+            </div>
+            <div class="product-section">
+                <div class="product-category">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTHPe-u2T7dqQo8edt1Z2pEqgC_oo_D2mPPg&s" alt="Chicken">
+                    <h2>Chicken</h2>
+                </div>
+                <div class="choice-section">
+                    <h3>Choice of Bottom Chicken</h3>
+                    <form>
+                        <ul class="chicken-list">
+                            <li>
+                                <label>
+                                    <input type="radio" name="chicken" value="Butter Chicken">
+                                    Butter Chicken
+                                </label>
+                                <div>
+                                    <label><input type="checkbox"> Active</label>
+                                    <label><input type="checkbox"> Hide</label>
+                                </div>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="chicken" value="BBQ Chicken Wing">
+                                    BBQ Chicken Wing
+                                </label>
+                                <div>
+                                    <label><input type="checkbox"> Active</label>
+                                    <label><input type="checkbox"> Hide</label>
+                                </div>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="chicken" value="Roast Chicken">
+                                    Roast Chicken
+                                </label>
+                                <div>
+                                    <label><input type="checkbox"> Active</label>
+                                    <label><input type="checkbox"> Hide</label>
+                                </div>
+                            </li>
+                        </ul>
+                        <button type="submit" class="submit-btn">Save Preferences</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
